@@ -9,12 +9,17 @@ public class AnyBaseToDecimal {
         System.out.println(d);
     }
 
+    public static int getValueIndecimal(int n, int b) {
+        // write your code here
+        int ans = 0 , multiplier = 0;
+         
+        while (n > 0) {
+              int remainder = n % 10 ;
+              n = n/10 ;
+              ans += remainder * Math.pow(b,multiplier);
+              multiplier++;
+        }
 
-
-public static int getValueIndecimal(int n, int b){
-    // write your code here
-    int ans ;
-
-    return ans ;
- }
+        return ans;
+    }
 }
