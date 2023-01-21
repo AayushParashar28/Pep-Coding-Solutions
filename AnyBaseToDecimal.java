@@ -10,9 +10,8 @@ public class AnyBaseToDecimal {
     }
 
     public static int getValueIndecimal(int n, int b) {
-        // write your code here
         int ans = 0 , multiplier = 0;
-         
+        
         while (n > 0) {
               int remainder = n % 10 ;
               n = n/10 ;
