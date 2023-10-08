@@ -6,10 +6,10 @@ public class ReverseANumber {
         int n = s.nextInt();
 
         int node = 0;
-        while(n!=0)
+        while(n > 0)
         {
             int m = n%10;
-            System.out.println(m);
+            System.out.print(m);
             node++;
             n=n/10;
         }
